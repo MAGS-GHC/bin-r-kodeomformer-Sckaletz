@@ -1,5 +1,6 @@
 const binaryNumbers = [128, 64, 32, 16, 8, 4, 2, 1];
 
+// Function to calculate binary to IP
 function bintoip() {
     let binaryToIP = 0;
     let binaryToIPArray = [];
@@ -21,8 +22,10 @@ function bintoip() {
     } else {
         alert("Use only numbers 0-1 and '.'");
     }
+    document.getElementById("binarytoip").value = "";
 }
 
+// Function to calculate IP to binary
 function iptobin() {
     let ipToBinary = "";
     let ipToBinaryArray = [];
@@ -47,4 +50,5 @@ function iptobin() {
     } else {
         alert("Use only numbers 0-9 and '.'");
     }
+    document.getElementById("iptobinary").value = "";
 }
